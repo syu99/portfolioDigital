@@ -10,6 +10,8 @@ const AiArt = lazy(() => import('./pages/AiArt'));
 const AiMusic = lazy(() => import('./pages/AiMusic'));
 const VideoEditing = lazy(() => import('./pages/VideoEditing'));
 const Cart = lazy(() => import('./pages/Cart'));
+const Success = lazy(() => import('./pages/Success'));
+const Cancel = lazy(() => import('./pages/Cancel'));
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
               <Route path="/ai-music" element={<AiMusic />} />
               <Route path="/video-editing" element={<VideoEditing />} />
               <Route path="/cart" element={<Cart />} />
+              <Route path="/success" element={<Success />} />
+              <Route path="/cancel" element={<Cancel />} />
             </Routes>
           </Suspense>
         </div>

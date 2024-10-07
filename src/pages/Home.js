@@ -6,6 +6,8 @@ import { FaLinkedin } from 'react-icons/fa';
 
 const Home = () => {
   const { addToCart } = useContext(CartContext);
+  const [showNotification, setShowNotification] = useState(false);
+  const [notificationMessage, setNotificationMessage] = useState('');
 
   // Définition des packs
   const packs = [
@@ -121,14 +123,32 @@ const Home = () => {
               price: option.price,
               quantity,
             });
+            setNotificationMessage('Service ajouté au panier !');
+            setShowNotification(true);
+            setTimeout(() => setShowNotification(false), 2000); // Masquer après 2 secondes
           }
         });
       }
     });
   };
 
+  // Ajout des packs au panier
+  const handleAddPackToCart = (pack) => {
+    addToCart({ ...pack, quantity: 1 });
+    setNotificationMessage('Pack ajouté au panier !');
+    setShowNotification(true);
+    setTimeout(() => setShowNotification(false), 2000); // Masquer après 2 secondes
+  };
+
   return (
     <div className="bg-background text-foreground min-h-screen flex flex-col items-center p-4 pt-20">
+      {/* Notification temporaire */}
+      {showNotification && (
+        <div className="fixed top-4 right-4 bg-green-500 text-white py-2 px-4 rounded shadow-lg">
+          {notificationMessage}
+        </div>
+      )}
+
       {/* Présentation personnelle */}
       <h1 className="text-4xl font-bold text-purple mb-4 text-center">
         Bienvenue sur le Portfolio de Yoann
@@ -169,8 +189,8 @@ const Home = () => {
                 ))}
               </ul>
               <button
-                onClick={() => addToCart({ ...pack, quantity: 1 })}
-                className="w-full bg-purple hover:bg-purple-700 text-white font-bold py-2 px-4 rounded"
+                onClick={() => handleAddPackToCart(pack)}
+                className="w-full bg-purple hover:bg-purple-700 text-white font-bold py-2 px-4 rounded transform transition-transform duration-150 active:scale-95 focus:outline-none focus:ring focus:ring-purple-300"
               >
                 Commander
               </button>
@@ -219,7 +239,7 @@ const Home = () => {
               })}
               <button
                 onClick={() => handleAddServiceToCart(service.id)}
-                className="mt-4 w-full bg-purple hover:bg-purple-700 text-white font-bold py-2 px-4 rounded"
+                className="mt-4 w-full bg-purple hover:bg-purple-700 text-white font-bold py-2 px-4 rounded transform transition-transform duration-150 active:scale-95 focus:outline-none focus:ring focus:ring-purple-300"
               >
                 Ajouter au Panier
               </button>
