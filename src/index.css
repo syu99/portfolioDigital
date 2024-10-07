@@ -1,3 +1,11 @@
+/* src/index.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* styles globaux personnalisés (optionnel) */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
