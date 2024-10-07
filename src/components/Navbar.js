@@ -2,18 +2,12 @@
 
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { navItems } from '../data';
 
 const Navbar = () => {
-  const navItems = [
-    { name: 'Accueil', path: '/' },
-    { name: 'Art IA', path: '/ai-art' },
-    { name: 'Musique IA', path: '/ai-music' },
-    { name: 'Montage Vidéo', path: '/video-editing' },
-  ];
-
   return (
-    <nav className="bg-background p-4">
-      <ul className="flex space-x-4 text-foreground">
+    <nav className="bg-background p-4 fixed w-full top-0 z-10">
+      <ul className="flex justify-center space-x-8 text-foreground">
         {navItems.map((item) => (
           <li key={item.path}>
             <NavLink
