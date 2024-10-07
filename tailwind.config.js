@@ -8,7 +8,9 @@ module.exports = {
         background: '#282a36',
         foreground: '#f8f8f2',
         purple: '#bd93f9',
-        // ajoutez d'autres couleurs si nécessaire
+        pink: '#ff79c6',
+        cyan: '#8be9fd',
+        green: '#50fa7b',
       },
     },
   },
