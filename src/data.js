@@ -55,10 +55,12 @@ export const artworks = [
     {
       title: 'oriental_feel',
       src: '/assets/music/oriental_feel.wav',
+      cover: '/assets/music/covers/cover_2.png',
     },
     {
       title: 'Panic in the sky',
       src: '/assets/music/panic_in_the_sky.mp3',
+      cover: '/assets/music/covers/cover_1.png',
     },
     // Ajoutez d'autres morceaux ici
   ];
