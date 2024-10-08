@@ -1,10 +1,9 @@
-// src/App.js
-
 import React, { Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'; // Utilisation de HashRouter
 import Navbar from './components/Navbar';
 import { CartProvider } from './CartContext';
 
+// Chargement des pages de manière paresseuse (lazy)
 const Home = lazy(() => import('./pages/Home'));
 const AiArt = lazy(() => import('./pages/AiArt'));
 const AiMusic = lazy(() => import('./pages/AiMusic'));
