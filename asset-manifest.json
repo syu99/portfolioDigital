@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolioDigital/static/css/main.eb999826.css",
-    "main.js": "/portfolioDigital/static/js/main.6e4d9986.js",
+    "main.js": "/portfolioDigital/static/js/main.38fa6932.js",
     "static/js/936.c7ef8eca.chunk.js": "/portfolioDigital/static/js/936.c7ef8eca.chunk.js",
     "static/js/356.7cbc604f.chunk.js": "/portfolioDigital/static/js/356.7cbc604f.chunk.js",
     "static/js/578.aad5f7e1.chunk.js": "/portfolioDigital/static/js/578.aad5f7e1.chunk.js",
@@ -11,7 +11,7 @@
     "static/js/585.ecf491a9.chunk.js": "/portfolioDigital/static/js/585.ecf491a9.chunk.js",
     "index.html": "/portfolioDigital/index.html",
     "main.eb999826.css.map": "/portfolioDigital/static/css/main.eb999826.css.map",
-    "main.6e4d9986.js.map": "/portfolioDigital/static/js/main.6e4d9986.js.map",
+    "main.38fa6932.js.map": "/portfolioDigital/static/js/main.38fa6932.js.map",
     "936.c7ef8eca.chunk.js.map": "/portfolioDigital/static/js/936.c7ef8eca.chunk.js.map",
     "356.7cbc604f.chunk.js.map": "/portfolioDigital/static/js/356.7cbc604f.chunk.js.map",
     "578.aad5f7e1.chunk.js.map": "/portfolioDigital/static/js/578.aad5f7e1.chunk.js.map",
@@ -22,6 +22,6 @@
   },
   "entrypoints": [
     "static/css/main.eb999826.css",
-    "static/js/main.6e4d9986.js"
+    "static/js/main.38fa6932.js"
   ]
 }
