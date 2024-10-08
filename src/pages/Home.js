@@ -151,7 +151,7 @@ const Home = () => {
 
       {/* Présentation personnelle */}
       <h1 className="text-4xl font-bold text-purple mb-4 text-center">
-        Bienvenue sur le Portfolio de Yoann
+        Bienvenue sur le Portfolio de Johan
       </h1>
       <p className="text-xl mb-4 text-center max-w-2xl">
         Je suis un développeur passionné par les technologies d'intelligence
